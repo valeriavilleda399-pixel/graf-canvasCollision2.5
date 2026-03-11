@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Interactividad 2D - Gatos</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #A99EDB; 
+        }
+        canvas {
+            display: block;
+        }
+        .game-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 0px #DB9ED0, 6px 6px 0px #A99EDB;
+    margin: 0;
+    pointer-events: none; /* Importante: permite hacer clic a través del título */
+    z-index: 10;
+}
+    </style>
+</head> 
+<body> 
+    <div id="game-ui">
+        <h1 class="game-title">gráficos2D </h1>
+    </div>
+    <canvas id="canvas"></canvas> 
+    
+    <script src="colision.js"></script> 
+</body> 
+</html>
